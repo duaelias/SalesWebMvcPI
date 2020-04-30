@@ -37,7 +37,8 @@ namespace SalesWebMvcPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SalesWebMvcPIContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("SalesWebMvcPIContext")));
+                    options.UseMySql(Configuration.GetConnectionString("SalesWebMvcPIContext"), builder =>
+                        builder.MigrationsAssembly("SalesWebMvcPI")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
