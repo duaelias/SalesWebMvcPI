@@ -14,6 +14,8 @@ namespace SalesWebMvcPI.Data
         {
         }
 
-        public DbSet<SalesWebMvcPI.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> salesRecords { get; set; }
     }
 }
