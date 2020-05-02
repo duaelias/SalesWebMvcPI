@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvcPI.Data;
+using SalesWebMvcPI.Services;
 
 namespace SalesWebMvcPI
 {
@@ -41,6 +42,7 @@ namespace SalesWebMvcPI
                         builder.MigrationsAssembly("SalesWebMvcPI")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
