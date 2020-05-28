@@ -39,11 +39,21 @@
                 "Name"))" class="form-control"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Criar Vendedor" class="btn btn-success" />
+                <input type="submit" value="Criar novo" class="btn btn-warning" />
             </div>
         </form>
     </div>
 </div>
+
+<h4>
+
+</h4>
+
+<form asp-action="Index">
+    <input type="hidden" asp-for="Seller" />
+    <input type="submit" value="Voltar" class="btn btn-success" />
+</form>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

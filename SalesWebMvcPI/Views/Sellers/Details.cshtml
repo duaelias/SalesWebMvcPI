@@ -46,7 +46,15 @@
 </div>
 
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-default">Edit</a>
-    <a asp-action="Index">Voltar a lista</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+    
 </div>
+
+<h4>
+</h4>
+
+<form asp-action="Index">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Voltar" class="btn btn-info" />
+</form>
 

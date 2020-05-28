@@ -60,7 +60,7 @@ namespace SalesWebMvcPI.Data
             SalesRecord r22 = new SalesRecord(22, new DateTime(2020, 06, 24), 4000.0, SalesStatus.Billed, s4);
             SalesRecord r23 = new SalesRecord(23, new DateTime(2020, 06, 19), 11000.0, SalesStatus.Canceled, s2);
             SalesRecord r24 = new SalesRecord(24, new DateTime(2020, 06, 12), 8000.0, SalesStatus.Billed, s5);
-            SalesRecord r25 = new SalesRecord(25, new DateTime(2020, 06, 31), 7000.0, SalesStatus.Billed, s3);
+            SalesRecord r25 = new SalesRecord(25, new DateTime(2020, 06, 30), 7000.0, SalesStatus.Billed, s3);
             SalesRecord r26 = new SalesRecord(26, new DateTime(2020, 06, 6), 5000.0, SalesStatus.Billed, s4);
             SalesRecord r27 = new SalesRecord(27, new DateTime(2020, 06, 13), 9000.0, SalesStatus.Pending, s1);
             SalesRecord r28 = new SalesRecord(28, new DateTime(2020, 06, 7), 4000.0, SalesStatus.Billed, s3);
